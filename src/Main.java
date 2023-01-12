@@ -5,7 +5,7 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        int k, i = 1;
+        int k, i = 1,j = 0, total = 0;
 
         System.out.print("Bir tam sayı giriniz : ");
         k = input.nextInt();
@@ -14,9 +14,12 @@ public class Main {
 
             if ( i % 12 == 0 ){
                 System.out.println(i);
+                total += i;
+                ++j;
             }
             i++;
         }
+        System.out.println("Ortalama : " + (total / j));
 
     }
 }
